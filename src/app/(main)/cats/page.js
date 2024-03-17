@@ -10,7 +10,7 @@ async function getCats() {
   return res.json()
 }
 
-export default async function Cats() {
+export default async function Page() {
   const cats = await getCats();
 
   return (

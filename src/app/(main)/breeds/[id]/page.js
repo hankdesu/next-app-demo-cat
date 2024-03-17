@@ -21,7 +21,7 @@ export async function getBreedImage(id) {
   return data.url;
 }
 
-export default async function BreedId({ params }) {
+export default async function Page({ params }) {
   const { id } = params;
   const url = await getBreedImage(id);
 

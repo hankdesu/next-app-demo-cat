@@ -10,7 +10,7 @@ async function getBreeds() {
   return res.json()
 }
 
-export default async function Breeds() {
+export default async function Page() {
   const breeds = await getBreeds();
   const options = breeds.map(({ id, name }) => ({ id, name }));
 

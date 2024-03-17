@@ -16,7 +16,7 @@ function Layout({ children }) {
   const pathname = usePathname();
 
   return (
-    <div>
+    <section>
       <div className="min-h-full">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
@@ -43,12 +43,10 @@ function Layout({ children }) {
           </div>
         </div>
       </div>
-      <div>
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          {children}
-        </div>
+      <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+        {children}
       </div>
-    </div>
+    </section>
   );
 }
 
