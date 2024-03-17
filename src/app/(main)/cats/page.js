@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 async function getCats() {
-  const res = await fetch('https://api.thecatapi.com/v1/images/search?limit=8&api_key=live_5EX8mKyUdT8LPVAvA3IX8RrmDnhR7DS8WIehR2QUrwZuep8Sf6XVpIjYFrH5cDMm')
+  const res = await fetch('https://api.thecatapi.com/v1/images/search?limit=8&api_key=live_5EX8mKyUdT8LPVAvA3IX8RrmDnhR7DS8WIehR2QUrwZuep8Sf6XVpIjYFrH5cDMm', { cache: 'no-store' })
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
