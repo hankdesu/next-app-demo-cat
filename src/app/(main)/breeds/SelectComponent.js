@@ -27,7 +27,7 @@ function SelectComponent({ options }) {
             className="h-full w-full object-cover object-center lg:h-full lg:w-full"
             width={300}
             height={300}
-            onClick={router.push(`/breeds/${breed}`)}
+            onClick={() => router.push(`/breeds/${breed}`)}
           />
         )}
       </div>
